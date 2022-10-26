@@ -40,7 +40,11 @@
             bottom: 13px;
         }
         .btn{
-            
+            border-radius: 5px;
+            background-color: #D6E0F0;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -48,15 +52,15 @@
    <div class="container">
         <h2>Cadastro</h2>
         <label>Nome</label><br>
-        <input type="text" placeholder="nome"><br>
+        <input type="text" placeholder="nome" required><br>
         <br>
         <label>Email</label><br>
-        <input type="text" placeholder="email"><br>
+        <input type="text" placeholder="email" required><br>
         <br>
         <label>Senha</label><br>
         <input type="password" placeholder="senha"><br>
         <br>
-        <input type="checkbox" class="checkbox"> <p class="termos">Concordo com os <a href="/templates/termos.html">Termos</a></p><br>
+        <input type="checkbox" class="checkbox" required><p class="termos">Concordo com os <a href="/templates/termos.html">Termos</a></p><br>
         <br>
         
         <button class="btn">Cadastrar</button>
