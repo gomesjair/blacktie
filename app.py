@@ -8,6 +8,6 @@ def home():
     
 @app.route('/login')
 def login():
-    return render_template('login.html', titulo='login')
+    return render_template('login.html', titulo_login='login')
 
 app.run()
