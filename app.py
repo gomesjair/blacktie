@@ -4,10 +4,10 @@ app = Flask(__name__)
 
 @app.route('/inicio')
 def home():
-    return render_template('index.html', titulo='home')
+    return render_template('index.html', titulo='Home')
     
 @app.route('/login')
 def login():
-    return render_template('login.html', titulo_login='login')
+    return render_template('cadastro.html', titulo_login='Cadastro')
 
 app.run()
