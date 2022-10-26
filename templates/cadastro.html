@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/templates/login.html" rel="stylesheet">
+    <link href="/templates/login.css" rel="stylesheet">
+    <title>{{ titulo_login }}</title>
+    <style>
+        body{
+            background-color: #D6E0F0;
+        }
+        input{
+            width: 200px;
+            height: 25px;
+            border: 1px black solid;
+            border-radius: 5px;
+        }
+        .container{
+            background-color: beige;
+            width: 408px;
+            padding: 2% 0% 2% 14%;
+            margin-left: 28%;
+            margin-top: 10%;
+            border-radius: 5px;
+        }
+        label{
+            font-size: 20px;
+        }
+        .checkbox{
+            position: relative;
+            display: inline-block;
+            right: 100px;
+        }
+        .termos{
+            float: right;
+            position: relative;
+            right: 180px;
+            bottom: 13px;
+        }
+        .btn{
+            
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+        <h2>Cadastro</h2>
+        <label>Nome</label><br>
+        <input type="text" placeholder="nome"><br>
+        <br>
+        <label>Email</label><br>
+        <input type="text" placeholder="email"><br>
+        <br>
+        <label>Senha</label><br>
+        <input type="password" placeholder="senha"><br>
+        <br>
+        <input type="checkbox" class="checkbox"> <p class="termos">Concordo com os <a href="/templates/termos.html">Termos</a></p><br>
+        <br>
+        
+        <button class="btn">Cadastrar</button>
+   </div>
+</body>
+</html>
