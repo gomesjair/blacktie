@@ -52,19 +52,20 @@
 <body>
    <div class="container">
         <h2>Cadastro</h2>
-        <label>Nome</label><br>
-        <input type="text" placeholder="nome" required><br>
-        <br>
-        <label>Email</label><br>
-        <input type="text" placeholder="email" required><br>
-        <br>
-        <label>Senha</label><br>
-        <input type="password" placeholder="senha"><br>
-        <br>
-        <input type="checkbox" class="checkbox" required><p class="termos">Concordo com os <a href="/templates/termos.html">Termos</a></p><br>
-        <br>
-        
-        <button class="btn">Cadastrar</button>
+        <form action="/criar" method="post">
+            <label>Nome</label><br>
+            <input type="text" placeholder="nome" name="nome" required><br>
+            <br>
+            <label>Email</label><br>
+            <input type="text" placeholder="email" name="email" required><br>
+            <br>
+            <label>Senha</label><br>
+            <input type="password" placeholder="senha" name="senha" required><br>
+            <br>
+            <input type="checkbox" class="checkbox" required><p class="termos">Concordo com os <a href="/templates/termos.html">Termos</a></p><br>
+            <br>
+            <button class="btn">Cadastrar</button>
+        </form>
    </div>
 </body>
 </html>
