@@ -19,20 +19,35 @@ class Usuario:
 #app flask
 app = Flask(__name__)
 
-@app.route('/inicio')
-def home():
+@app.route('/')
+def index():
     return render_template('index.html', titulo='Home')
     
 @app.route('/login')
 def login():
     return render_template('cadastro.html', titulo_login='Cadastro')
 
-@app.route('/criar')
+@app.route('/criar', methods=['POST'])
 def criar():
     nome = request.form['nome']
     email = request.form['email']
     senha = request.form['senha']
     usuario = Usuario(nome, email, senha)
 
+    #write
+    data = [usuario]
+    for record in data:
+        doc_ref = db.collection(u'Users').document(record['nome'])
+        doc_ref.set(record)
+    
+    #read
+    users_ref = db.collection(u'users')
+    docs = users_ref.stream()
+
+    for doc in docs:
+        print(f'{doc.id} => {doc.to_dict()}')
+
+    #retorna para a home
+    return render_template('index.html')
 
 app.run()
