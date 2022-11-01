@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    background-color: rgb(188, 37, 37);
+    background-color: rgb(79, 79, 79);
 }
 html {
     scroll-behavior: smooth;
@@ -113,4 +113,16 @@ html {
 .menu {
     margin-top: -100px;
     margin-left: 50px;
+}
+
+.img {
+    margin-top: 200px;
+    margin-left: 200px;
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    
+}
+.h2 {
+    position: relative;
 }
