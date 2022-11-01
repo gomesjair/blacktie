@@ -35,7 +35,7 @@ def criar():
     usuario = Usuario(nome, email, senha)
 
     #write
-    data = [usuario.Usuario]
+    data = [usuario.nome, usuario.email, usuario.senha]
     for record in data:
         doc_ref = db.collection(u'Users').document(record['nome'])
         doc_ref.set(record)
