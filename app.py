@@ -27,7 +27,7 @@ def index():
 def login():
     return render_template('cadastro.html', titulo_login='Cadastro')
 
-@app.route('/criar', methods=['POST'])
+@app.route('/criar', methods=['POST',])
 def criar():
     nome = request.form['nome']
     email = request.form['email']
@@ -35,7 +35,7 @@ def criar():
     usuario = Usuario(nome, email, senha)
 
     #write
-    data = [usuario]
+    data = [usuario.Usuario]
     for record in data:
         doc_ref = db.collection(u'Users').document(record['nome'])
         doc_ref.set(record)
@@ -50,4 +50,4 @@ def criar():
     #retorna para a home
     return render_template('index.html')
 
-app.run()
+app.run(debug=True)
