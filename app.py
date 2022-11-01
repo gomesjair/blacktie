@@ -3,12 +3,17 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
+#database
+
+
+#classe para o formulario de cadasto
 class Usuario:
     def __init__(self,nome,email,senha):
         self.nome = nome
         self.email = email
         self.senha = senha
 
+#app flask
 app = Flask(__name__)
 
 @app.route('/inicio')
