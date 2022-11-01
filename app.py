@@ -34,20 +34,5 @@ def criar():
     senha = request.form['senha']
     usuario = Usuario(nome, email, senha)
 
-    #write
-    data = [usuario.nome, usuario.email, usuario.senha]
-    for record in data:
-        doc_ref = db.collection(u'Users').document(record['nome'])
-        doc_ref.set(record)
-    
-    #read
-    users_ref = db.collection(u'users')
-    docs = users_ref.stream()
-
-    for doc in docs:
-        print(f'{doc.id} => {doc.to_dict()}')
-
-    #retorna para a home
-    return render_template('index.html')
 
 app.run(debug=True)
