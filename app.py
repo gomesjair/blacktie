@@ -4,7 +4,7 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 
 #database
-cred = credentials.Certificate('/home/belini/Documents/prog/webproject/virtualenv/blacktie-2a2a9-firebase-adminsdk-59nbn-f6c28ab314.json')
+cred = credentials.Certificate('blacktie-2a2a9-firebase-adminsdk-59nbn-f6c28ab314.json')
 app = firebase_admin.initialize_app(cred)
 db = firestore.client()
 
