@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/templates/login.html" rel="stylesheet">
+    <link href="/templates/login.css" rel="stylesheet">
+    <title>{{ titulo_login }}</title>
+    <style>
+        body{
+            background-color:#D6E0F0 ;
+            max-width: 1000px;
+        }
+        input{
+            width: 250px;
+            height: 35px;
+            border: 1px black solid;
+            border-radius: 5px;
+        }
+        .container{
+            background-color:  #F1F3F8;
+            width: 408px;
+            padding: 2% 0% 2% 14%;
+            margin-left: 41%;
+            margin-top: 10%;
+            border-radius: 5px;
+        }
+        label{
+            font-size: 20px;
+        }
+        .checkbox{
+            position: relative;
+            display: inline-block;
+            right: 100px;
+        }
+        .termos{
+            float: right;
+            position: relative;
+            right: 160px;
+            bottom: 50px;
+        }
+        .btn{
+            border-radius: 5px;
+            background-color: #D6E0F0;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+        <h2>Cadastro</h2>
+        <form action="/criar" method="post">
+            <label>Nome</label><br>
+            <input type="text" placeholder="nome" name="nome" required><br>
+            <br>
+            <label>Email</label><br>
+            <input type="text" placeholder="email" name="email" required><br>
+            <br>
+            <label>Senha</label><br>
+            <input type="password" placeholder="senha" name="senha" required><br>
+            <br>
+            <input type="checkbox" class="checkbox" required><p class="termos">Concordo com os <a href="/templates/termos.html">Termos</a></p><br>
+            <br>
+            <button class="btn">Cadastrar</button>
+        </form>
+   </div>
+</body>
+</html>
