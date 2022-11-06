@@ -1,0 +1,39 @@
+ body{
+    background-color:#D6E0F0 ;
+    max-width: 1000px;
+}
+input{
+    width: 250px;
+    height: 35px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.container{
+    background-color:  #F1F3F8;
+    width: 408px;
+    padding: 2% 0% 2% 14%;
+    margin-left: 41%;
+    margin-top: 10%;
+    border-radius: 5px;
+}
+label{
+    font-size: 20px;
+}
+.checkbox{
+    position: relative;
+    display: inline-block;
+    right: 100px;
+}
+.termos{
+    float: right;
+    position: relative;
+    right: 160px;
+    bottom: 50px;
+}
+.btn{
+    border-radius: 5px;
+    background-color: #D6E0F0;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
