@@ -32,19 +32,19 @@ def suporte():
 
 @app.route('/cap')
 def cap():
-    render_template('cap.html', titulo='CAP')
+    return render_template('cap.html', titulo='CAP')
 
 @app.route('/nap')
 def nap():
-    render_template('nap.html', titulo='NAP')
+    return render_template('nap.html', titulo='NAP')
 
 @app.route('/conta')
 def conta():
-    render_template('conta.html', titulo='Minha Conta')
+    return render_template('conta.html', titulo='Minha Conta')
 
 @app.route('/termos')
 def termos():
-    render_template('termos.html', titulo='Termos')
+    return render_template('termos.html', titulo='Termos')
 
 
 
