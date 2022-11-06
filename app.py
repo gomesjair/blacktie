@@ -22,6 +22,7 @@ def login():
 @app.route('/criar', methods=['POST',])
 def criar():
    #arrumar aqui dps
+    usuario = null
 
 @app.route('/suporte')
 def suporte():
