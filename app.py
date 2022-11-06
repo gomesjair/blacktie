@@ -35,11 +35,11 @@ def cap():
     render_template('cap.html', titulo='CAP')
 
 @app.route('/nap')
-def cap():
+def nap():
     render_template('nap.html', titulo='NAP')
 
 @app.route('/conta')
-def cap():
+def conta():
     render_template('conta.html', titulo='Minha Conta')
 
 @app.route('/termos')
