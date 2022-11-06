@@ -21,10 +21,7 @@ def login():
 
 @app.route('/criar', methods=['POST',])
 def criar():
-    nome = request.form['nome']
-    email = request.form['email']
-    senha = request.form['senha']
-    usuario = Usuario(nome, email, senha)
+   #arrumar aqui dps
 
 @app.route('/suporte')
 def suporte():
