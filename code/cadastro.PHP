@@ -8,9 +8,10 @@
     <title>Cadastro</title>
 </head>
 <body>
+    <?php include_once("conexao.php"); ?>
    <div class="container">
         <h2>Cadastro</h2>
-        <form  method="post">
+        <form method="post" action="salvar.php">
             <label>Nome</label><br>
             <input type="text" placeholder="nome" name="nome" required><br>
             <br>
@@ -22,7 +23,7 @@
             <br>
             <input type="checkbox" class="checkbox" required><p class="termos">Concordo com os <a href="/code/termos.html">Termos</a></p><br>
             <br>
-            <button class="btn"><a href="/code/index.html">Cadastrar</a></button>
+            <input type="submit" value="salvar">
         </form>
    </div>
 </body>
