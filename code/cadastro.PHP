@@ -8,6 +8,9 @@
     <title>Cadastro</title>
 </head>
 <body>
+<div class="header">
+        <h1 class="bl"><a href="/code/index.html">BLACKTIE</a></h1>
+    </div>
     <?php include_once("conexao.php"); ?>
    <div class="container">
         <h2>Cadastro</h2>
